@@ -1,7 +1,9 @@
 
 #### 안녕하세요. 프론트엔드 개발자 박범주입니다 😄
 
+<!--
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=beomjourr&show_icons=true&theme=ambient_gradient)
+-->
 
 <!--
 **beomjourr/beomjourr** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
