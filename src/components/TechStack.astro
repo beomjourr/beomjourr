@@ -1,0 +1,25 @@
+---
+import profile from '../data/profile';
+---
+
+<section id="skills" class="section-container">
+  <p class="text-accent font-mono text-sm mb-2 slide-up">03.</p>
+  <h2 class="section-title slide-up" style="animation-delay: 0.1s;">Skills</h2>
+  <p class="section-subtitle slide-up" style="animation-delay: 0.2s;">기술 스택</p>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    {profile.skills.map((skill, index) => (
+      <div class="glass-card slide-up" style={`animation-delay: ${0.3 + index * 0.1}s;`}>
+        <h3 class="text-accent text-sm font-semibold uppercase tracking-wider mb-4">{skill.category}</h3>
+        <ul class="space-y-2">
+          {skill.items.map((item) => (
+            <li class="flex items-center gap-2 text-dark-muted text-sm">
+              <span class="w-1.5 h-1.5 rounded-full bg-accent shrink-0"></span>
+              {item}
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))}
+  </div>
+</section>
