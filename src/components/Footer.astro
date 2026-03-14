@@ -1,0 +1,28 @@
+---
+import profile from '../data/profile';
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="border-t border-dark-border py-8">
+  <div class="max-w-5xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+    <p class="text-dark-muted text-sm">
+      &copy; {currentYear} {profile.nameEn}. All rights reserved.
+    </p>
+
+    <div class="flex items-center gap-4">
+      {profile.github && (
+        <a href={profile.github} target="_blank" rel="noopener noreferrer" class="text-dark-muted hover:text-accent transition-colors text-sm">
+          GitHub
+        </a>
+      )}
+      {profile.linkedin && (
+        <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" class="text-dark-muted hover:text-accent transition-colors text-sm">
+          LinkedIn
+        </a>
+      )}
+      <a href={`mailto:${profile.email}`} class="text-dark-muted hover:text-accent transition-colors text-sm">
+        Email
+      </a>
+    </div>
+  </div>
+</footer>
