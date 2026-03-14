@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create:*)",
+      "Read(//Users/beomjourr/workspace/**)",
+      "Bash(mkdir -p _astro_tmp)",
+      "Bash(cd:*)",
+      "Bash(npx astro:*)",
+      "Bash(rm:*)",
+      "Bash(npm run:*)",
+      "Bash(git init:*)"
+    ]
+  }
+}
